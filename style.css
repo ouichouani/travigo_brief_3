@@ -30,9 +30,6 @@ nav ul{
     list-style: none;
     margin-right: 120px;
 }
-nav img{
-    display: none;
-}
 nav ul li a{
     text-decoration: none;
     color: black;
