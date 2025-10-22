@@ -859,6 +859,7 @@ nav .menu{
 }
 nav ul{
     gap: 75px;
+    display: none;
 }
 
 
