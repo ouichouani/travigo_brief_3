@@ -1,0 +1,120 @@
+body{
+    width: 100%;
+
+}
+nav{
+    position: fixed;
+}
+.background{
+    
+   top: 0px;
+   right: 0px;
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    
+}
+.blog{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: "Poppins";
+    align-content: center;
+    font-size: 30px;
+    color: rgb(9, 8, 8);
+    display: block;
+    
+    margin-left: 80px;
+    
+}
+.blog h1{
+    color: chocolate;
+    font-family: "pappins";
+}
+.blogs{
+   
+   display: flex;
+   flex-wrap: wrap;
+   gap: 120px;
+   justify-content: center;
+    
+   
+}
+.blog1 .img{
+    width: 100%;
+    overflow: hidden;
+}
+.blog1{
+    width: 500px;
+}
+
+.blog1 img{
+   
+    width: 100%;
+    
+     transition: transform 0.4s ease; 
+     border-radius: 10px 10px 0px 0px;    
+}
+
+
+.blog1 img:hover{
+    transform: scale(1.1);
+}
+
+
+.blog1 div{
+    width: 500px;
+   
+    background-color: #FFF1DA;
+    border-radius: 0 0 10px 10px;
+}
+.blog1 .description{
+    height: 130px;
+}
+.blog1 .description h3{
+    padding-left: 10%;
+    font-size: 30px;
+    color: rgb(9, 9, 78);  
+    
+}
+.blog1 .description a{
+    text-decoration: none;
+    
+}
+.blog1 .description a:hover{
+    text-decoration: underline;
+
+}
+
+
+.blog1 .description p{
+    padding-left: 14%;
+    color: chocolate;
+}
+
+@media (max-width:700px){
+    .blog{
+         width: 100%;
+    margin: 0 auto 15px;
+    padding-inline: 15px;
+
+    font-family: "Poppins";
+    
+    font-size: 30px;
+    color: rgb(9, 8, 8);
+    
+    
+    }
+    nav{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
