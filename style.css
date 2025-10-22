@@ -1231,3 +1231,83 @@ footer .texts .discover .icons{
     margin: 10px 0;
 
 }
+
+/* ------------------------- */
+
+.notre_equipe{
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.notre_equipe h1{
+    font-family: var(--title-font-family);
+    color: var(--bg-color3);
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.notre_equipe section{
+    display: flex;
+    position: relative;
+    padding: 0 20px;
+    gap: 20px;
+    margin: 50px 0;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.notre_equipe section img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    object-fit: cover;
+    background-color: var(--bg-color2);
+    border-radius: 1000px;
+}
+
+
+.notre_equipe section article h2{
+    position: relative;
+    color: var(--title-color);
+}
+
+.notre_equipe section article p{
+    width: 90%;
+    text-decoration: none;
+    display: block;
+    border: 1px solid var(--bg-color3);
+    border-width: 0 1px 1px 0 ;
+
+    padding: 10px;
+    background-color: var(--bg-color1);
+    color: var(--bg-color3);
+    font-family: var(--main-font-family);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+
+@media(max-width : 500px ) {
+    .notre_equipe section img{
+        background-color: black;
+        position: absolute;
+        height: 75px;
+        width: 75px;
+        border: 5px solid white;
+        top: 0;
+        left: 0;
+    }
+
+    .notre_equipe section article{
+        margin-left: 20px;
+    }
+
+    .notre_equipe section article h2{
+        margin-left: 50px;
+    }
+
+    .notre_equipe section article p{
+        padding-top: 50px;
+    }
+}
