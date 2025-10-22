@@ -67,6 +67,10 @@ nav.sticky{
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
+nav .menu{
+    display: none;
+}
+
 /* home section */
 
 
@@ -818,8 +822,6 @@ footer .texts .discover .icons i{
 }
 
 
-/*  */
-
 
 
 /* responsive design */
@@ -835,19 +837,25 @@ nav{
     display: flex;
     justify-content: start;
     padding-left: 20px;
+    width: 100%;
+}
+nav h1{
+    margin-right: 50%;
 }
 nav .login-btn , nav .sign-btn{
     display: none;
 }
-nav h1{
+/* nav h1{
     display: none;
-}
+} */
 nav h3{
     display: none;
 }
-nav img{
-    width: 30px;
+nav .menu{
     display: block;
+}
+.nav .menu img{
+    width: 30px;
 }
 nav ul{
     gap: 75px;
