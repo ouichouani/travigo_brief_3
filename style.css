@@ -1151,3 +1151,83 @@ footer .texts .discover .icons{
     display: none;
 }
 }
+
+/* ---------------------------- */
+
+:root {
+    --text-color: #212832;
+    --desc-color: #6F727B;
+    --title-color: #181E4B;
+    --bg-color1: #FEF0DA;
+    --bg-color2: #F1A501;
+    --bg-color3: #DF6951;
+
+    --main-font-family: 'Poppins';
+    --title-font-family: 'Volkhov';
+}
+
+.FAQ{
+    /* background-color: red; */
+    padding-inline: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;    
+}
+
+.FAQ h1 {
+    font-family: var(--title-font-family);
+    color: var(--bg-color3);
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.FAQ h1 span {
+    color: var(--title-color);
+    font-size: 2rem;
+}
+
+.FAQ section{
+    padding-left: 10%;
+    
+}
+.FAQ section .question_container{
+    margin-bottom: 50px;
+}
+
+
+
+.FAQ section h2{
+    position: relative;
+    padding-left: 30px ;
+    margin-left: -10%;
+    font-family: var(--title-font-family);
+}
+
+.FAQ section h2::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 1000px;
+    background: var(--bg-color3);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.FAQ section a{
+    width: 90%;
+    text-decoration: none;
+    display: block;
+    border: 1px solid var(--bg-color3);
+    border-width: 0 1px 1px 0 ;
+
+    padding: 10px;
+    background-color: var(--bg-color1);
+    color: var(--bg-color3);
+    font-family: var(--main-font-family);
+    border-radius: 10px;
+    margin: 10px 0;
+
+}
