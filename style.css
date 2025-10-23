@@ -817,6 +817,9 @@ footer .texts .discover .icons i{
     font-size: 10pt;
     color: rgba(0, 0, 0, .3);
 }
+nav .menu{
+    display: none;
+}
 
 
 
@@ -854,9 +857,7 @@ nav ul{
     gap: 75px;
     display: none;
 }
-nav .menu{
-    display: none;
-}
+
 
 nav .menu{
     display: block;
