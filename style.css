@@ -67,9 +67,6 @@ nav.sticky{
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
-nav .menu{
-    display: none;
-}
 
 /* home section */
 
@@ -821,6 +818,9 @@ footer .texts .discover .icons i{
     color: rgba(0, 0, 0, .3);
 }
 
+nav .menu{
+    display: none;
+}
 
 
 
@@ -851,14 +851,19 @@ nav .login-btn , nav .sign-btn{
 nav h3{
     display: none;
 }
-nav .menu{
-    display: block;
-    position: relative;
-}
+
 
 nav ul{
     gap: 75px;
     display: none;
+}
+nav .menu{
+    display: none;
+}
+
+nav .menu{
+    display: block;
+    position: relative;
 }
 nav .menu .list{
     background-color: white;
@@ -903,6 +908,7 @@ nav .menu .list a{
 
 .home{
     margin: 0;
+    padding-top: 40px;
     
 }
 .home .home-texts{
