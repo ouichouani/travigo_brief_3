@@ -853,14 +853,49 @@ nav h3{
 }
 nav .menu{
     display: block;
+    position: relative;
 }
-.nav .menu img{
-    width: 30px;
-}
+
 nav ul{
     gap: 75px;
     display: none;
 }
+nav .menu .list{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    padding: 10px 40px 10px 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15pt;
+    gap: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    display: none;
+    transition: 1s;
+}
+nav .menu:hover .list{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    animation: menu .3s ease-out;
+    overflow: hidden;
+}
+nav .menu .list a{
+    color: #b95440;
+    text-decoration: none;
+}
+
+
+@keyframes menu {
+    from{
+        height: 0;
+    }to{
+        height: 340px;
+    }
+}
+
 
 
 /* home section */
@@ -1159,6 +1194,26 @@ footer .texts .discover .icons{
 .contact img{
     display: none;
 }
+
+
+/* login page */
+.login{
+    margin: 0;
+}
+.login img{
+    display: none;
+
+}
+
+/* sign up */
+.signup{
+    margin: 0;
+}
+.signup img{
+    display: none;
+
+}
+
 }
 
 /* ---------------------------- */
