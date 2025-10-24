@@ -73,6 +73,7 @@ main section .imgs{
     padding: 0 0 10px;
     position: relative;
 }
+
 main section .imgs .nav_imgs{
     height: 10px;
     width: 100%;
@@ -89,6 +90,11 @@ main section .imgs .nav_imgs{
         height: 15px;
         border-radius: 100px;
         background-color: var(--bg-color2);
+        transition: all .25s;
+    }
+
+    a:hover{
+        background-color: var(--bg-color3);
     }
     
 }
@@ -102,7 +108,6 @@ main section .imgs .img_container {
     display: flex;
     flex-shrink: 0;
     overflow: hidden;
-    /* gap: 10px; */
 }
 
 main section .img_container img {
@@ -113,14 +118,6 @@ main section .img_container img {
     background: var(--bg-color2);
     object-fit: cover;
 }
-
-/* main section .img_container::-webkit-scrollbar {
-    background-color: var(--bg-color2);
-}
-
-main section .img_container::-webkit-scrollbar-thumb {
-    background-color: var(--bg-color3);
-} */
 
 main>article {
     width: 98%;
@@ -185,16 +182,14 @@ main>article h2::before {
     }
 
     main section .img_container{
-        /* width: 80% ; */
         height: 70vh;
     }
 
     main>article h2{
         font-size: 1.2rem;
         margin-bottom: 10px;
-
-
     }
+    
     main>article p {
         font-size: 1rem;
     }
