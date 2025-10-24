@@ -66,16 +66,48 @@ main section article p {
 }
 
 
+main section .imgs{
+    /* background-color: green; */
+    width: 30%;
+    height: 100%;
+    padding: 0 0 10px;
+    position: relative;
+}
 
-main section .img_container {
+main section .imgs .nav_imgs{
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    a{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 100px;
+        background-color: var(--bg-color2);
+        transition: all .25s;
+    }
+
+    a:hover{
+        background-color: var(--bg-color3);
+    }
+    
+}
+
+main section .imgs .img_container {
     height: 500px;
-    min-width: 30%;
+    width: 100%;
+
+    scroll-behavior: smooth;
+
     display: flex;
     flex-shrink: 0;
-    overflow: auto;
-    gap: 10px;
-    padding-bottom: 10px;
-
+    overflow: hidden;
 }
 
 main section .img_container img {
@@ -85,14 +117,6 @@ main section .img_container img {
     flex-shrink: 0;
     background: var(--bg-color2);
     object-fit: cover;
-}
-
-main section .img_container::-webkit-scrollbar {
-    background-color: var(--bg-color2);
-}
-
-main section .img_container::-webkit-scrollbar-thumb {
-    background-color: var(--bg-color3);
 }
 
 main>article {
@@ -153,21 +177,19 @@ main>article h2::before {
         transform: translateY(-100%);
     }
 
-    main section article h1 span{
-
+    main section .imgs {
+        width: 100%;
     }
 
     main section .img_container{
-        /* width: 80% ; */
         height: 70vh;
     }
 
     main>article h2{
         font-size: 1.2rem;
         margin-bottom: 10px;
-
-
     }
+    
     main>article p {
         font-size: 1rem;
     }
