@@ -56,4 +56,4 @@ Le site est composé de plusieurs pages principales :
 
 1. Cloner le dépôt :
    ```bash
-   [git clone https://github.com/imadprogram/travigo-design.git](https://github.com/ouichouani/travigo_brief_3.git)
+   git clone https://github.com/imadprogram/travigo-design.git](https://github.com/ouichouani/travigo_brief_3.git
